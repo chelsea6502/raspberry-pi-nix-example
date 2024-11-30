@@ -24,6 +24,7 @@
           interfaces = { wlan0.useDHCP = true; };
         };
         environment.systemPackages = with pkgs; [ ];
+        system.stateVersion = "24.05";
       };
 
     in
