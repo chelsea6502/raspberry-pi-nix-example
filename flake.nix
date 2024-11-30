@@ -1,14 +1,14 @@
 {
   description = "raspberry-pi-nix example";
   nixConfig = {
-    extra-substituters = [ "https://raspberry-pi-nix.cachix.org" ];
+    extra-substituters = [ "https://nix-community.cachix.org" ];
     extra-trusted-public-keys = [
-      "raspberry-pi-nix.cachix.org-1:WmV2rdSangxW0rZjY/tBvBDSaNFQ3DyEQsVw8EvHn9o="
+      "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
     ];
   };
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
-    raspberry-pi-nix.url = "github:tstat/raspberry-pi-nix";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+    raspberry-pi-nix.url = "github:tstat/raspberry-pi-nix/57e8e8e";
   };
 
   outputs = { self, nixpkgs, raspberry-pi-nix }:
