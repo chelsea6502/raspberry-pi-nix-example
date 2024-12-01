@@ -21,7 +21,10 @@
         networking = {
           hostName = "nixos";
           useDHCP = false;
-          interfaces = { wlan0.useDHCP = true; };
+          interfaces = { 
+             wlan0.useDHCP = true;
+             eth0.useDHCP = true;
+          };
         };
         environment.systemPackages = with pkgs; [ ];
         system.stateVersion = "24.05";
