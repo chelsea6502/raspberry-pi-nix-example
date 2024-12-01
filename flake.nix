@@ -33,7 +33,7 @@
     in
     {
       nixosConfigurations = {
-        rpi-example = nixosSystem {
+        nixos = nixosSystem {
           system = "aarch64-linux";
           modules = [ raspberry-pi-nix.nixosModules.raspberry-pi basic-config ];
         };
